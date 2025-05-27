@@ -1,0 +1,23 @@
+<header [ngClass]="header">
+  <div [ngClass]="div">
+    <!-- Logo o título del sitio -->
+    <h1 [ngClass]="h1">{{title}}</h1>
+    <!-- Navegación -->
+    <nav>
+      <ul [ngClass]="ul">
+        <li>
+          <a routerLink="/" [ngClass]="a">{{home}}</a>
+        </li>
+        <li>
+          <a routerLink="/cursos" [ngClass]="a">{{courses}}</a>
+        </li>
+        <li>
+          <a href="#" [ngClass]="a">{{upload}}</a>
+        </li>
+        <li>
+          <a (click)="logoutUser()" style="cursor: pointer;" [ngClass]="a">Cerrar sesion</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

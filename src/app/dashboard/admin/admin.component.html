@@ -1,9 +1,4 @@
-@if(showHeader){
-<app-header [title]="'Cursos'" [home]="'Inicio'" [courses]="'Cursos'" [upload]="'Subir constancias'"
-  [header]="'bg-teal-600 text-white'"
+<app-header [header]="'bg-teal-600 text-white'"
   [div]="'container mx-auto px-4 py-4 flex flex-col 2xl:flex-row xl:flex-row lg:flex-row md:flex-row sm:flex-row justify-between items-center'"
   [h1]="'text-2xl font-extrabold'" [ul]="'flex space-x-6'"
   [a]="'hover:text-teal-200 transition duration-300 font-bold'"></app-header>
-}
-<app-footer></app-footer>
-<router-outlet></router-outlet>
